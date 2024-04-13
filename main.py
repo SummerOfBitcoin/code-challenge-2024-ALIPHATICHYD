@@ -40,7 +40,7 @@ def is_valid_input(vin: Dict, vout: List[Dict]) -> bool:
     return False
 
 # Define the function to mine the block
-def mine_block(transactions: List[Dict]) -> (Dict, bytes, List[str]):
+def mine_block(transactions: List[Dict]) -> (Dict, bytes, List[str]): # type: ignore
     # Create the block header
     version = 1 or 2
     block_header = {
